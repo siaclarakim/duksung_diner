@@ -3,28 +3,39 @@
   <head>
     <meta charset="utf-8">
       <title>덕성여대 맛집</title>
+      <link rel="stylesheet" href="style.css">
   </head>
     <body>
+      <header>
+        <!--헤더: 제목-->
       <h1>시아가 추천하는 덕성여대 맛집</h1>
-      <hr>
-      <h2>페이지 목차</h2>
-      <ul>
+      </header>
+      <!--네비게이션: 페이지 목차-->
+      <nav>
+       <h2>페이지 목차</h2>
+       <ul>
         <li><a href="#overview">페이지 개요</a></li>
         <li><a href="#retaurant_list">덕성여대 맛집 목록</a></li>
         <li><a href="#restaurant_detail">맛집 상세 정보</a></li>
-      </ul>
-      <hr>
-      <h2 id="overview">개요</h2>
+       </ul>
+      </nav>
+      <!--메인 콘텐츠츠-->
+      <main>
+       <section id="overview">
+        <h2>개요</h2>
       <p>덕성여대는 <mark>서울 도봉구 삼양로 144길 33</mark>에 있습니다.<br>
       주변에 맛있는 음식점이 널려 있습니다.<br>
       </p>
       <div style="background-color : skyblue; display: inline-block;">아래의 맛집 리스트는 다이닝코드에서 <span style="color : red">덕성여대 맛집</span>으로 검색한 210곳에서 뽑았습니다.
       </div>
       <hr>
-      <h2 id="restaurant_list">
-        덕성여대 맛집 목록(from.<a href="https://www.diningcode.com/list.dc?query=%EB%8D%95%EC%84%B1%EC%97%AC%EB%8C%80" target="_blank">다이닝코드</a>)
-      </h2>
-      <ol type="1">
+      <!--맛집 리스트 섹션-->
+      </section>
+      <section id="restaurant_list">
+        <h2>덕성여대 맛집 목록(from.<a href="https://www.diningcode.com/list.dc?query=%EB%8D%95%EC%84%B1%EC%97%AC%EB%8C%80" target="_blank">다이닝코드</a>)
+        </h2>
+        <ol type="1">ㄹ
+          <!--각 막집 항목 상세 페이지로 연결-->
         <li><a href="./pages/place1.html" title="링크를 클릭하기면 산책 상세페이지로 이동합니다.">산책</a></li>
         <li><a href="./pages/place2.html" title="링크를 클릭하기면 엘수에뇨 상세페이지로 이동합니다.">엘수에뇨
         </a></li> 
@@ -38,7 +49,10 @@
         <li><a href="./pages/place10.html" title="링크를 클릭하기면 기분좋은음식들 상세페이지로 이동합니다.">기분좋은음식들</a></li>
       </ol>
       <hr>
-      <h2 id="restaurant_detail">맛집 상세 정보</h2>
+      </section>
+      <!--맛집 상세 정보 테이블 섹션-->
+      <section id="restaurant_detail">
+        <h2>맛집 상세 정보</h2>
       <table border="1">
         <thead>
           <tr>
@@ -50,6 +64,7 @@
           </tr>
         </thead>
         <tbody>
+          <!--각 맛집 정보 이미지와 텍스트-->
           <tr>
             <td><a href="pages/place1.html"><img src="media/place1.jpg" alt="산책" width="100" height="100" title="이미지를 클릭하면 산책 상세페이지로 이동합니다."></a></td>
             <td>산책</td>
@@ -83,7 +98,7 @@
             <td>미뇨리</td>
             <td>돈까스, 함박스테이크</td>
             <td>4.6</td>
-            <td>서울특별시 도봉구 삼양로144길 18 2층층</td>
+            <td>서울특별시 도봉구 삼양로144길 18 2층</td>
           </tr>
           <tr>
             <td><a href="pages/place6.html"><img src="media/place6.jpg" alt="양국" width="100" height="100" title="이미지를 클릭하면 양국 상세페이지로 이동합니다."></a></td>
@@ -97,7 +112,7 @@
             <td>eeeyo</td>
             <td>요거트, 그릭요거트</td>
             <td>4.5</td>
-            <td>서울특별시 도봉구 삼양로142길33 일층</td>
+            <td>서울특별시 도봉구 삼양로142길33 1층</td>
           </tr>
           <tr>
             <td><a href="pages/place8.html"><img src="media/place8.jpg" alt="카페레" width="100" height="100" title="이미지를 클릭하면 카페레 상세페이지로 이동합니다."></a></td>
@@ -122,5 +137,11 @@
           </tr>
         </tbody>
       </table>
-    </body>
+    </section>
+  </main>
+  <!--푸터:작성자 정보-->
+  <footer>
+    <p>작성자: 김시아</p>
+  </footer>
+ </body>
 </html>

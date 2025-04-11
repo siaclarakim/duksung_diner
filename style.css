@@ -1,0 +1,14 @@
+/*배경, 폰트, 택스트 색*/
+body {
+  background-color: mistyrose;
+  color: blueviolet;
+  font-family: 궁서체;
+}
+/* 제목 스타일 */
+h1, h2 {
+  color: black;
+}
+/*테이블에 마우스 올렸을 때 색상 바뀌게 하기*/ 
+tbody tr:hover {
+  background-color: olive;
+}
